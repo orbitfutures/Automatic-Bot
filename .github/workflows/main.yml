@@ -16,7 +16,7 @@ jobs:
       with:
         python-version: '3.11'
 
-    - name: Install dependencies
+        - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
@@ -28,4 +28,4 @@ jobs:
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       run: |
-        python main.py
+        python orbit_trade_alert_pro.py
